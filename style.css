@@ -1,0 +1,424 @@
+        body {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            font-family: "Arial", sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+        }
+
+        header nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            position: relative;
+        }
+
+        .logotitre {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            z-index: 100;
+        }
+
+        .logotitre img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logotitre h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        /* Menu principal */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li {
+            cursor: pointer;
+        }
+
+        header nav button {
+            background: transparent;
+            outline: none;
+            height: 40px;
+            width: 140px;
+            cursor: pointer;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 10px 0;
+            z-index: 100;
+        }
+
+        header nav button svg {
+            width: 16px;
+        }
+
+        /* Menu burger */
+        .burger-menu {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .burger-line {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            transition: all 0.3s ease;
+        }
+
+        /* Section Home */
+        .home {
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url(thumb-1920-942653.jpg) center/cover no-repeat fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            color: white;
+            margin: 20px 0;
+        }
+
+        .home p {
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 0 30px;
+            max-width: 90%;
+        }
+
+        .home button {
+            background: transparent;
+            outline: none;
+            border: 2px solid white;
+            color: white;
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Section Menu */
+        .menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .menu h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .menu p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1rem;
+        }
+
+        .burger {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .burger1, .burger2, .burger3 {
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+        .tomb, .ex, .entrai {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .tomb {
+            background-image: url(OIP.jpg);
+        }
+
+        .ex {
+            background-image: url(OIP\ \(1\).jpg);
+        }
+
+        .entrai {
+            background-image: url(OIP\ \(2\).jpg);
+        }
+
+        /* Burger du mois */
+        .burgermois {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .leftcontent {
+            flex: 1 1 300px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .leftcontent h1 {
+            font-size: 2rem;
+        }
+
+        .leftcontent button {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 180px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .imgright {
+            flex: 1 1 300px;
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imgright img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            height: auto;
+        }
+
+        /* Vos retours */
+        .vosretours {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .vosretours h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card1, .card2, .card3 {
+            flex: 1 1 300px;
+            max-width: 400px;
+            background: #e5e2de;
+            padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cercle1, .cercle2, .cercle3 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cercle1 {
+            background-image: url(OIP\ \(3\).jpg);
+        }
+
+        .cercle2 {
+            background-image: url(OIP\ \(4\).jpg);
+        }
+
+        .cercle3 {
+            background-image: url(OIP\ \(5\).jpg);
+        }
+
+
+        .fin {
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            height: 20vh;
+            background-color: rgba(48, 47, 47, 0.7);
+            border-top: #D3D3D3;
+            align-items: center;
+        }
+
+        .fin h2 ,.fin p {
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .fin a {
+            color: white;
+            border-bottom: 2px solid white ;
+        }
+
+        .réseaux {
+            display: flex;
+            gap: 40px;
+        }
+
+        .réseaux svg {
+            width: 60px;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            fill: white;
+        }
+
+        .réseaux svg:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animation menu burger */
+        .burger-menu.active .burger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .burger-menu.active .burger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger-menu.active .burger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+        
+        /* Media Queries pour les écrans plus larges */
+        @media (min-width: 768px) {
+            .logotitre h1 {
+                font-size: 2rem;
+            }
+
+            .home h1 {
+                font-size: 3.5rem;
+            }
+
+            .home p {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 40px;
+                font-size: 1.1rem;
+            }
+
+            .menu h1, .burgermois h1, .vosretours h1 {
+                font-size: 2.5rem;
+            }
+
+            .menu p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .logotitre h1 {
+                font-size: 2.5rem;
+            }
+
+            .home h1 {
+                font-size: 5rem;
+            }
+
+            .home p {
+                font-size: 2.5rem;
+            }
+
+            header nav {
+                padding: 10px 50px;
+            }
+
+            .burgermois {
+                padding: 60px 50px;
+            }
+
+            .menu, .vosretours {
+                padding: 60px 50px;
+            }
+        }
+
+        /* Media Query pour mobile */
+        @media (max-width: 767px) {
+            .burger-menu {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 80px;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+                font-size: 1.2rem;
+            }
+
+            header nav button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+        }
